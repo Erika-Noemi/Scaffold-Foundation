@@ -1,0 +1,19 @@
+
+<p id="notice"><%= notice %></p>
+
+<table>
+  <thead>
+  <tr>
+    <th><strong>Marca:</strong><p>
+      <%= @auto.marca %></th>
+    <th><strong>Modelo:</strong><p>
+      <%= @auto.modelo %></th>
+    <th><strong>Anio:</strong><p>
+      <%= @auto.anio %></th>
+    <th colspan="3"></th>
+  </tr>
+  </thead>
+
+
+<%= link_to 'Edit', edit_auto_path(@auto), class:'button secondary expand' %> |
+<%= link_to 'Back', autos_path, class:'button radius alert' %>
